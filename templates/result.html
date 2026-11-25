@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crop Disease Results | AgriSathi AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .result-container {
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .result-image {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+
+        .prediction-card {
+            background: #f0f8f0;
+            color: #245b35;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            text-align: left;
+            border-left: 5px solid #198754;
+        }
+
+        .prediction-card h3 {
+            margin-top: 0;
+        }
+
+        .confidence {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .prediction-type {
+            display: inline-block;
+            background: #dcefe1;
+            color: #245b35;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .no-result {
+            background: #fff3cd;
+            color: #664d03;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .warning {
+            background: #fff8e5;
+            color: #755b16;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .result-status {
+            font-weight: bold;
+            color: #198754;
+        }
+
+        .action-links {
+            margin-top: 25px;
+        }
+
+        .action-links a {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .result-container {
+                padding: 15px;
+                margin: 25px auto;
+            }
+
+            .result-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/" class="logo">🌱 AgriSathi <span>AI</span></a>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/prediction">Crop Detection</a>
+        <a href="/chatbot">AI Chatbot</a>
+    </div>
+</nav>
+
+<div class="result-container">
+
+    <h1>🌿 Crop Disease Analysis</h1>
+
+    <p>
+        Your uploaded leaf image has been processed
+        by the PlantDoc YOLO model.
+    </p>
+
+    <!-- Uploaded Image -->
+    <img
+        src="{{ url_for('static', filename=image_path) }}"
+        alt="Analyzed crop leaf"
+        class="result-image"
+    >
+
+    {% if predictions %}
+
+        <h2>Detection Results</h2>
+
+        <p class="result-status">
+            Status: {{ status }}
+        </p>
+
+        <!-- Best Prediction -->
+        <div class="prediction-card">
+
+            <h2>{{ disease_name }}</h2>
+
+            {% if confidence is not none %}
+                <p class="confidence">
+                    Confidence: {{ "%.2f"|format(confidence) }}%
+                </p>
+            {% endif %}
+
+        </div>
+
+        <!-- All Predictions -->
+        <h3>All Detected Classes</h3>
+
+        {% for prediction in predictions %}
+
+            <div class="prediction-card">
+
+                <h3>{{ prediction.name }}</h3>
+
+                <span class="prediction-type">
+                    {{ prediction.type }}
+                </span>
+
+                <p class="confidence">
+                    Confidence:
+                    {{ "%.2f"|format(prediction.confidence) }}%
+                </p>
+
+            </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <div class="no-result">
+
+            <h2>⚠️ No Known Class Detected</h2>
+
+            <p>
+                The model could not identify a known PlantDoc class
+                in this image. Try uploading another clear leaf image.
+            </p>
+
+        </div>
+
+    {% endif %}
+
+    <!-- Important Note -->
+    <div class="warning">
+
+        <strong>⚠️ Important Note:</strong>
+
+        <p>
+            This result is an AI-generated prediction, not a confirmed
+            agricultural diagnosis. Model confidence does not guarantee
+            accuracy. Some general leaf classes do not indicate whether
+            a plant is healthy or diseased.
+        </p>
+
+        <p>
+            Consult an agricultural expert or your nearest KVK
+            for confirmation before deciding on treatment.
+        </p>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="action-links">
+
+        <a href="/prediction" class="btn">
+            🔄 Analyze Another Image
+        </a>
+
+        <br><br>
+
+        <a href="/">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

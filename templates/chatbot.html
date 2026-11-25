@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriSathi - AI Farming Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                🌱 AgriSathi
+            </div>
+
+            <p class="sidebar-subtitle">
+                AI Assistant for Farmers
+            </p>
+
+            <button class="new-chat" onclick="clearChat()">
+                + New Conversation
+            </button>
+
+            <div class="sidebar-info">
+                <h3>What can I help with?</h3>
+
+                <p>🌾 Crop cultivation</p>
+                <p>🍃 Plant diseases</p>
+                <p>💧 Irrigation guidance</p>
+                <p>🌱 Soil health</p>
+                <p>🧑‍🌾 Organic farming</p>
+            </div>
+
+            <div class="sidebar-footer">
+                AI-powered farming guidance
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT AREA -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <h2>AI Farming Chatbot</h2>
+                    <p>Your intelligent farming companion</p>
+                </div>
+
+                <span class="status">
+                    ● AI Assistant Online
+                </span>
+
+            </header>
+
+
+            <!-- CHAT MESSAGES -->
+
+            <section class="chat-area" id="chatArea">
+
+                <div class="welcome-screen" id="welcomeScreen">
+
+                    <div class="welcome-icon">🌱</div>
+
+                    <h1>Welcome to AgriSathi</h1>
+
+                    <p>
+                        Your smart farming assistant.
+                        Ask any agriculture-related question.
+                    </p>
+
+                    <div class="suggestion-container">
+
+                        <button onclick="askQuestion(
+                        'How can I improve soil fertility?')">
+
+                            🌱 Improve soil fertility
+
+                        </button>
+
+                        <button onclick="askQuestion(
+                        'How do I grow wheat?')">
+
+                            🌾 Wheat cultivation
+
+                        </button>
+
+                        <button onclick="askQuestion(
+                        'What are common tomato diseases?')">
+
+                            🍅 Tomato diseases
+
+                        </button>
+
+                        <button onclick="askQuestion(
+                        'Explain drip irrigation.')">
+
+                            💧 Drip irrigation
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INPUT AREA -->
+
+            <footer class="input-container">
+
+                <div class="input-box">
+
+                    <textarea
+                        id="userInput"
+                        placeholder="Ask your farming question..."
+                        rows="1"
+                        maxlength="1500"
+                        onkeydown="handleKey(event)"
+                    ></textarea>
+
+                    <button id="sendButton"
+                            onclick="sendMessage()">
+
+                        ➤
+
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    AI-generated agricultural guidance can be
+                    inaccurate. Verify important farming decisions
+                    with a qualified agricultural expert.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

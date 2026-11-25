@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSathi AI | Smart Farming Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="logo">🌱 AgriSathi<span> AI</span></a>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="{{ url_for('chatbot_page') }}">
+            Open AgriSathi Chatbot
+        </a>
+        <a href="/prediction" class="btn">Get Started</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <div class="eyebrow">SMARTER FARMING • BETTER FUTURE</div>
+
+        <h1>
+            Growing a Better
+            <span>Future with AI</span>
+        </h1>
+
+        <p>
+            Meet AgriSathi AI, your intelligent farming assistant.
+            Explore AI-powered crop leaf analysis and get information
+            to help you understand potential crop diseases.
+        </p>
+
+        <a href="/prediction" class="btn">
+            Explore Crop Detection →
+        </a>
+    </div>
+
+    <div class="hero-image"></div>
+</section>
+
+<section class="features" id="features">
+
+    <div class="eyebrow">WHAT WE OFFER</div>
+
+    <h2 class="section-title">Intelligence for Every Farm</h2>
+
+    <p class="section-description">
+        Technology and agriculture working together.
+    </p>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <h3>Crop Disease Detection</h3>
+            <p>
+                Upload a crop leaf image and use our trained
+                computer vision model to identify visible leaf classes.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI-Powered Analysis</h3>
+            <p>
+                Explore model predictions and confidence scores
+                from your uploaded crop images.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🌾</div>
+            <h3>Smart Agriculture</h3>
+            <p>
+                Discover how artificial intelligence can support
+                modern agricultural practices.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Let's Make Farming Smarter</h2>
+    <p>Start by uploading a crop leaf image for AI analysis.</p>
+    <a href="/prediction" class="btn btn-light">
+        Start Now →
+    </a>
+</section>
+
+<footer class="footer">
+    © 2026 AgriSathi AI | Smart Agriculture Assistant
+</footer>
+
+</body>
+</html>

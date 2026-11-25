@@ -1,0 +1,107 @@
+
+{
+  "greeting": {
+    "keywords": ["hello", "hi", "hey", "namaste", "नमस्ते", "नमस्कार"],
+    "answer": "Namaste! 🌱 Welcome to AgriSathi AI. I can help you with crop cultivation, plant diseases, soil health, irrigation, fertilizers, organic farming and weather-related farming questions. Aap mujhse Hindi ya English mein sawal pooch sakte hain."
+  },
+  "thanks": {
+    "keywords": ["thanks", "thank you", "धन्यवाद", "शुक्रिया"],
+    "answer": "You're welcome! 🌱 Happy to help. Keep learning and growing with AgriSathi AI!"
+  },
+  "wheat": {
+    "keywords": ["wheat", "grow wheat", "wheat cultivation", "गेहूं", "गेहूं की खेती", "gehu"],
+    "answer": "🌾 WHEAT CULTIVATION GUIDE\n\n1. Season: Wheat is generally a Rabi crop grown during the winter season in India.\n2. Soil: Well-drained loamy soil is commonly suitable.\n3. Land preparation: Prepare a level and well-prepared seedbed.\n4. Irrigation: Water requirements depend on soil, rainfall and crop stage. Avoid waterlogging.\n5. Nutrients: Use soil-test-based nutrient recommendations.\n6. Weed management: Monitor weeds regularly and follow local agricultural guidance.\n\nFor region-specific advice, consult your local Krishi Vigyan Kendra (KVK)."
+  },
+  "rice": {
+    "keywords": ["rice", "paddy", "rice cultivation", "grow rice", "धान", "चावल", "धान की खेती"],
+    "answer": "🌾 RICE CULTIVATION GUIDE\n\n1. Season: Rice is commonly grown during the Kharif season in many parts of India.\n2. Soil: Clayey and loamy soils with good water retention can be suitable.\n3. Water: Maintain suitable soil moisture according to the cultivation method.\n4. Seed selection: Choose a locally recommended variety.\n5. Nutrients: Base fertilizer decisions on soil testing.\n6. Weed management: Monitor the field and follow local recommendations.\n\nWater requirements vary by variety, soil and cultivation method."
+  },
+  "tomato": {
+    "keywords": ["tomato", "tomato farming", "grow tomatoes", "tomatoes", "टमाटर", "टमाटर की खेती"],
+    "answer": "🍅 TOMATO CULTIVATION GUIDE\n\n1. Climate: Tomato generally grows well in moderate temperatures.\n2. Soil: Well-drained fertile loamy soil is suitable.\n3. Sunlight: Plants need adequate sunlight.\n4. Irrigation: Maintain consistent soil moisture and avoid waterlogging.\n5. Support: Staking can help support growing plants.\n6. Monitoring: Regularly check leaves, stems and fruits for disease or pest symptoms.\n\nSelect varieties recommended for your region and season."
+  },
+  "maize": {
+    "keywords": ["maize", "corn", "maize cultivation", "grow maize", "मक्का", "मक्के की खेती"],
+    "answer": "🌽 MAIZE CULTIVATION GUIDE\n\n1. Climate: Maize grows well in warm conditions.\n2. Soil: Fertile, well-drained soil is preferred.\n3. Season: Growing seasons vary by region and variety.\n4. Irrigation: Maintain adequate moisture, especially during important growth stages.\n5. Nutrients: Use soil-test-based fertilizer recommendations.\n6. Weed control: Keep the field monitored and follow local agricultural advice."
+  },
+  "crop_rotation": {
+    "keywords": ["crop rotation", "rotate crops", "crop sequence", "फसल चक्र", "फसल बदलना"],
+    "answer": "🌱 CROP ROTATION\n\nCrop rotation means growing different crops in sequence on the same land.\n\nBenefits:\n1. Helps maintain soil health.\n2. Can reduce the buildup of some crop-specific pests and diseases.\n3. Legume crops can contribute nitrogen to the soil.\n4. Helps use soil nutrients more efficiently.\n\nExample: A cereal crop followed by a suitable legume crop. Choose a rotation based on your soil, climate and local recommendations."
+  },
+  "soil": {
+    "keywords": ["soil", "soil health", "soil fertility", "improve soil fertility", "soil quality", "मिट्टी", "मिट्टी की उर्वरता", "मिट्टी की गुणवत्ता"],
+    "answer": "🌱 SOIL HEALTH GUIDE\n\nWays to improve soil health:\n1. Get your soil tested regularly.\n2. Add suitable organic matter such as well-decomposed compost.\n3. Grow cover crops where appropriate.\n4. Practice crop rotation.\n5. Avoid unnecessary soil disturbance.\n6. Prevent soil erosion.\n7. Use nutrients according to soil-test recommendations.\n\nHealthy soil supports better crop growth and water management."
+  },
+  "soil_testing": {
+    "keywords": ["soil test", "test soil", "soil testing", "check soil quality", "मिट्टी की जांच", "मिट्टी परीक्षण"],
+    "answer": "🔬 SOIL TESTING\n\nSoil testing helps identify soil pH and available nutrients.\n\nGeneral process:\n1. Collect representative soil samples from different parts of the field.\n2. Avoid unusual spots such as compost piles or field edges.\n3. Follow the sampling instructions provided by the soil testing laboratory.\n4. Submit the sample to a soil testing laboratory or KVK.\n5. Use the report to plan crop and nutrient management.\n\nA proper soil test is more reliable than guessing nutrient requirements."
+  },
+  "ph": {
+    "keywords": ["soil ph", "ph value", "ideal soil ph", "ph for wheat", "soil acidity", "soil alkalinity", "मिट्टी का ph", "पीएच"],
+    "answer": "🧪 SOIL pH GUIDE\n\nSoil pH indicates whether soil is acidic, neutral or alkaline.\n\n1. Below 7: Acidic soil.\n2. Around 7: Neutral soil.\n3. Above 7: Alkaline soil.\n\nMany crops grow well in slightly acidic to neutral soil, but their preferred pH ranges differ.\n\nWheat generally performs well in near-neutral soils. Test your soil before making any pH correction. Ask an agricultural expert for suitable treatment based on the soil report."
+  },
+  "irrigation": {
+    "keywords": ["irrigation", "watering", "water crops", "when to irrigate", "water plants", "सिंचाई", "पानी देना", "फसल में पानी"],
+    "answer": "💧 IRRIGATION GUIDE\n\nGood irrigation management helps crops receive suitable moisture.\n\n1. Check soil moisture before watering.\n2. Consider crop type and growth stage.\n3. Consider rainfall and soil type.\n4. Avoid waterlogging.\n5. Use suitable irrigation methods to reduce water loss.\n6. Follow local crop-specific irrigation recommendations.\n\nWater requirements are different for each crop and region."
+  },
+  "drip_irrigation": {
+    "keywords": ["drip irrigation", "drip system", "drip watering", "टपक सिंचाई", "ड्रिप सिंचाई"],
+    "answer": "💧 DRIP IRRIGATION\n\nDrip irrigation supplies water slowly near the plant root zone through pipes and emitters.\n\nBenefits:\n1. Can reduce water wastage.\n2. Delivers water close to plant roots.\n3. Helps maintain more consistent soil moisture.\n4. Can be useful for orchards and vegetable crops.\n5. Can reduce weed growth between crop rows.\n\nRegular maintenance is needed to prevent emitter blockage."
+  },
+  "sprinkler": {
+    "keywords": ["sprinkler irrigation", "sprinkler system", "sprinkler watering", "स्प्रिंकलर", "फव्वारा सिंचाई"],
+    "answer": "💦 SPRINKLER IRRIGATION\n\nSprinkler irrigation distributes water through pipes and sprinklers, similar to rainfall.\n\nBenefits:\n1. Can provide uniform water distribution when designed properly.\n2. Useful for many field crops.\n3. Can be suitable for uneven land.\n4. Helps reduce the need for surface channels.\n\nWind, water quality, soil and crop type should be considered when choosing this system."
+  },
+  "water_saving": {
+    "keywords": ["save water", "water conservation", "reduce water wastage", "water saving", "rainwater harvesting", "पानी बचाना", "जल संरक्षण", "वर्षा जल संचयन"],
+    "answer": "💧 WATER CONSERVATION IN FARMING\n\n1. Consider drip or sprinkler irrigation where suitable.\n2. Use mulch to help reduce evaporation.\n3. Repair leaking irrigation pipes.\n4. Collect and store rainwater where permitted and practical.\n5. Irrigate according to soil moisture and crop needs.\n6. Maintain field bunds where appropriate.\n\nEfficient water management helps conserve water resources."
+  },
+  "compost": {
+    "keywords": ["compost", "vermicompost", "organic manure", "organic farming", "organic matter", "composting", "जैविक खाद", "कम्पोस्ट", "वर्मी कम्पोस्ट", "जैविक खेती"],
+    "answer": "🌿 COMPOST AND ORGANIC FARMING\n\nCompost is decomposed organic material that can improve soil structure and add organic matter.\n\nBenefits:\n1. Improves soil structure.\n2. Supports beneficial soil organisms.\n3. Helps soil retain moisture.\n4. Recycles suitable organic waste.\n\nVermicompost is produced with the help of earthworms. Use mature, properly prepared compost and follow local recommendations."
+  },
+  "fertilizer": {
+    "keywords": ["fertilizer", "fertilizers", "manure", "plant nutrients", "nitrogen", "phosphorus", "potassium", "npk", "उर्वरक", "खाद", "नाइट्रोजन", "फास्फोरस", "पोटाश"],
+    "answer": "🧪 FERTILIZER AND PLANT NUTRIENTS\n\nPlants need several nutrients for healthy growth.\n\n1. Nitrogen (N): Supports leaf and vegetative growth.\n2. Phosphorus (P): Supports root development and energy transfer.\n3. Potassium (K): Supports water regulation and several plant functions.\n\nImportant advice:\n- Get a soil test before deciding nutrient requirements.\n- Select fertilizer based on the crop and soil report.\n- Follow the product label and local agricultural recommendations.\n- Do not apply fertilizer unnecessarily."
+  },
+  "disease": {
+    "keywords": ["plant disease", "crop disease", "disease", "yellow leaves", "leaves turning yellow", "brown spots", "leaf spots", "fungal disease", "पीले पत्ते", "पत्तों पर धब्बे", "फसल रोग", "पौधों की बीमारी"],
+    "answer": "🍃 PLANT DISEASE GUIDANCE\n\nCommon symptoms include:\n1. Yellowing leaves.\n2. Brown or dark spots.\n3. Wilting.\n4. Leaf curling.\n5. Unusual growth or discoloration.\n\nPossible causes include diseases, pests, nutrient problems, excess water or environmental stress.\n\nWhat you can do:\n- Check whether symptoms are spreading.\n- Inspect both sides of leaves.\n- Take clear photos of affected and healthy leaves.\n- Ask a local agricultural expert for identification.\n\nSymptoms alone may not confirm a disease. Avoid using pesticides without proper identification and expert guidance."
+  },
+  "tomato_disease": {
+    "keywords": ["tomato disease", "tomato diseases", "tomato leaf disease", "tomato leaves yellow", "tomato leaf spots", "टमाटर के रोग", "टमाटर के पत्ते पीले"],
+    "answer": "🍅 COMMON TOMATO PLANT PROBLEMS\n\nTomato plants can be affected by fungal, bacterial and viral diseases, as well as nutrient deficiencies and watering problems.\n\nWatch for:\n1. Leaf spots or unusual marks.\n2. Yellowing leaves.\n3. Wilting.\n4. Leaf curling.\n5. Unusual fruit marks.\n\nCheck the entire plant and note how quickly symptoms spread. A clear leaf photo and expert diagnosis can help identify the actual cause. Do not assume every yellow leaf is a disease."
+  },
+  "weather": {
+    "keywords": ["weather", "rain", "rainfall", "temperature", "humidity", "drought", "मौसम", "बारिश", "वर्षा", "तापमान", "नमी", "सूखा"],
+    "answer": "🌦️ WEATHER AND FARMING\n\nWeather affects crop growth, irrigation and harvesting.\n\n1. Heavy rainfall can cause waterlogging and soil erosion.\n2. High temperatures can cause heat stress.\n3. Low rainfall can increase drought risk.\n4. High humidity can favor some plant diseases.\n5. Strong winds can damage crops.\n\nCheck a reliable local weather forecast before important field operations. I do not currently have live weather data."
+  },
+  "drought": {
+    "keywords": ["drought", "dry conditions", "low rainfall", "water shortage", "सूखा", "कम बारिश", "पानी की कमी"],
+    "answer": "🌵 FARMING DURING LOW RAINFALL\n\n1. Choose crop varieties recommended for low-rainfall conditions.\n2. Conserve soil moisture with suitable mulching.\n3. Consider rainwater harvesting.\n4. Control weeds that compete for water.\n5. Plan irrigation carefully where water is available.\n6. Ask your local KVK about drought-resilient crop choices.\n\nCrop selection should depend on local rainfall, soil and available water."
+  },
+  "crop_recommendation": {
+    "keywords": ["recommend crop", "which crop should i grow", "suitable crop", "crop for sandy soil", "crop for clay soil", "low rainfall crops", "कौन सी फसल उगाएं", "फसल की सलाह"],
+    "answer": "🌱 CROP SELECTION GUIDE\n\nThe right crop depends on:\n1. Soil type.\n2. Soil pH.\n3. Rainfall.\n4. Temperature.\n5. Irrigation availability.\n6. Season.\n7. Local market and farming conditions.\n\nTell me your soil type, district, season and irrigation availability. I can provide general crop suggestions from my stored knowledge. Confirm the final choice with local agricultural experts."
+  },
+  "pm_kisan": {
+    "keywords": ["pm kisan", "pm-kisan", "pm kisan scheme", "kisan samman nidhi", "पीएम किसान", "प्रधानमंत्री किसान सम्मान निधि"],
+    "answer": "🇮🇳 PM-KISAN SCHEME\n\nPM-KISAN is a Government of India income-support scheme for eligible farmer families, subject to scheme rules.\n\nFarmers should:\n1. Check eligibility conditions.\n2. Verify their beneficiary status through the official PM-KISAN portal.\n3. Check required e-KYC and bank details.\n4. Contact an authorized government service centre or agriculture office for assistance.\n\nOfficial website: https://pmkisan.gov.in\n\nScheme rules and eligibility can change, so always check the official portal for current information."
+  },
+  "kcc": {
+    "keywords": ["kisan credit card", "kcc", "farmer credit card", "किसान क्रेडिट कार्ड", "किसान कार्ड"],
+    "answer": "🇮🇳 KISAN CREDIT CARD (KCC)\n\nThe Kisan Credit Card scheme helps eligible farmers access institutional credit for agricultural and related needs.\n\nFor details:\n1. Contact a participating bank.\n2. Ask about eligibility and required documents.\n3. Check the current interest and repayment conditions.\n4. Confirm the applicable rules with the bank.\n\nDo not rely on unofficial messages or websites for financial scheme information."
+  },
+  "crop_insurance": {
+    "keywords": ["crop insurance", "fasal bima", "pmfby", "pradhan mantri fasal bima", "फसल बीमा", "प्रधानमंत्री फसल बीमा योजना"],
+    "answer": "🇮🇳 CROP INSURANCE\n\nCrop insurance schemes can provide financial protection against specified crop losses, subject to policy conditions.\n\nFarmers should:\n1. Check whether their crop and area are covered.\n2. Confirm enrollment dates.\n3. Understand the policy conditions and exclusions.\n4. Keep relevant land and crop records.\n5. Contact the official agriculture department or insurer for claims assistance.\n\nOfficial information: https://pmfby.gov.in"
+  },
+  "kvk": {
+    "keywords": ["krishi vigyan kendra", "kvk", "agricultural university", "soil testing centre", "कृषि विज्ञान केंद्र", "कृषि विश्वविद्यालय"],
+    "answer": "🏫 AGRICULTURAL SUPPORT\n\nKrishi Vigyan Kendras (KVKs) provide agricultural training, demonstrations and technical guidance to farmers.\n\nYou can contact your nearest KVK for:\n1. Soil testing guidance.\n2. Crop selection advice.\n3. Disease and pest identification.\n4. Farming training.\n5. Improved agricultural practices.\n\nYou can also contact your state agriculture department or agricultural university."
+  },
+  "unknown": {
+    "keywords": [],
+    "answer": "I could not understand that question. Please ask me about crop cultivation, wheat, rice, tomato, maize, soil health, soil pH, irrigation, compost, fertilizers, plant diseases, weather or Indian farmer schemes. 🌱"
+  }
+}
